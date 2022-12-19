@@ -10,8 +10,9 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
-    <owl:Ontology rdf:about="http://www.reisenavet.no/MaaSOntology">
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+     xmlns:maas-onto="http://www.reisenavet.no/maas-onto#">
+    <owl:Ontology rdf:about="http://www.reisenavet.no/maas-onto">
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
     </owl:Ontology>
@@ -29,435 +30,435 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#applicableDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#applicableDiscount -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#applicableDiscount">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#applicableDiscount">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Organisation"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Person"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Organisation"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Person"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#fromTime -->
+    <!-- http://www.reisenavet.no/maas-onto#fromTime -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#fromTime"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#fromTime"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasAccidentInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasAccidentInformation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasAccidentInformation">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasAccidentInformation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TrafficInformation"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Accident"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TrafficInformation"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Accident"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasAddress -->
+    <!-- http://www.reisenavet.no/maas-onto#hasAddress -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasAddress">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasAddress">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Organisation"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Person"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Address"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Organisation"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Person"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Address"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasComfortLevel -->
+    <!-- http://www.reisenavet.no/maas-onto#hasComfortLevel -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasComfortLevel">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasComfortLevel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#ComfortLevel"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#ComfortLevel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasCongestionInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasCongestionInformation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasCongestionInformation">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasCongestionInformation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TrafficInformation"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Congestion"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TrafficInformation"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Congestion"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDailyOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDailyOperation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDailyOperation">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#DailyOperation"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDailyOperation">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#DayTypeAssignment"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#DailyOperation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDayOfWeek -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDayOfWeek -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDayOfWeek">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDayOfWeek">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#DayTypeAssignment"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDayTypeAssignment -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDayTypeAssignment -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDayTypeAssignment">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceCalendar"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDayTypeAssignment">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#ServiceCalendar"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#DayTypeAssignment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDiscountArrangement -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDiscountArrangement -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDiscountArrangement">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDiscountArrangement">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDiscountType -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDiscountType -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDiscountType">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountType"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDiscountType">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#DiscountType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasEffectiveDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#hasEffectiveDiscount -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasEffectiveDiscount">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#EffectiveDiscount"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasEffectiveDiscount">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#EffectiveDiscount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasEndLocation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasEndLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasEndLocation">
-        <rdfs:subPropertyOf rdf:resource="http://www.reisenavet.no/MaaSOntology#hasLocation"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Leg"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Location"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasEndLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.reisenavet.no/maas-onto#hasLocation"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Leg"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasEnvironmentalImpact -->
+    <!-- http://www.reisenavet.no/maas-onto#hasEnvironmentalImpact -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasEnvironmentalImpact">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasEnvironmentalImpact">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#EnvironmentalImpact"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#EnvironmentalImpact"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasImpactOnSchedule -->
+    <!-- http://www.reisenavet.no/maas-onto#hasImpactOnSchedule -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasImpactOnSchedule">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformation"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#TimePeriod"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasImpactOnSchedule">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TripInformation"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#TimePeriod"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasLeg -->
+    <!-- http://www.reisenavet.no/maas-onto#hasLeg -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasLeg">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Trip"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Leg"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasLeg">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Trip"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Leg"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasLocation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasLocation">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#GeographicalCoverage"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Location"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasLocation">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#GeographicalCoverage"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasModeOfOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasModeOfOperation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasModeOfOperation">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasModeOfOperation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Leg"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportService"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Leg"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TransportService"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasNonOperatingPeriod -->
+    <!-- http://www.reisenavet.no/maas-onto#hasNonOperatingPeriod -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasNonOperatingPeriod">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceCalendar"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriod"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasNonOperatingPeriod">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#ServiceCalendar"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#NonOperatingPeriod"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasNonOperatingPeriodInterval -->
+    <!-- http://www.reisenavet.no/maas-onto#hasNonOperatingPeriodInterval -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasNonOperatingPeriodInterval">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasNonOperatingPeriodInterval">
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasPaymentMeans -->
+    <!-- http://www.reisenavet.no/maas-onto#hasPaymentMeans -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasPaymentMeans">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasPaymentMeans">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasPeriodType -->
+    <!-- http://www.reisenavet.no/maas-onto#hasPeriodType -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasPeriodType">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasPeriodType">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#PeriodType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasPrice -->
+    <!-- http://www.reisenavet.no/maas-onto#hasPrice -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasPrice">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#MobilityPackage"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Price"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasPrice">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#MobilityPackage"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Price"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasRoute -->
+    <!-- http://www.reisenavet.no/maas-onto#hasRoute -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasRoute">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasRoute">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Leg"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Route"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Leg"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Route"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasServiceCalendar -->
+    <!-- http://www.reisenavet.no/maas-onto#hasServiceCalendar -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasServiceCalendar">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceCalendar"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasServiceCalendar">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#ServiceCalendar"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasStartLocation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasStartLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasStartLocation">
-        <rdfs:subPropertyOf rdf:resource="http://www.reisenavet.no/MaaSOntology#hasLocation"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Leg"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Location"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasStartLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.reisenavet.no/maas-onto#hasLocation"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Leg"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTrafficInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTrafficInformation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTrafficInformation">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTrafficInformation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformation"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#TrafficInformation"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TripInformation"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#TrafficInformation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTransportMeans -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTransportMeans -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTransportMeans">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Leg"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportMeans"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTransportMeans">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Leg"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#TransportMeans"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTrip -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTrip -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTrip">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TripPattern"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Trip"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTrip">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TripPattern"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Trip"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTripInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTripInformation -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTripInformation">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Trip"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformation"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTripInformation">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Trip"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#TripInformation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTripInformationSource -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTripInformationSource -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTripInformationSource">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTripInformationSource">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformation"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformationSource"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TripInformation"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#TripInformationSource"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTripPattern -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTripPattern -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTripPattern">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportService"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#TripPattern"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTripPattern">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TransportService"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#TripPattern"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasUnitOfMeasure -->
+    <!-- http://www.reisenavet.no/maas-onto#hasUnitOfMeasure -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasUnitOfMeasure">
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#UnitOfMeasure"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasUnitOfMeasure">
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#UnitOfMeasure"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasUserRating -->
+    <!-- http://www.reisenavet.no/maas-onto#hasUserRating -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasUserRating">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasUserRating">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasUserReview -->
+    <!-- http://www.reisenavet.no/maas-onto#hasUserReview -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasUserReview">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#UserReview"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasUserReview">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#UserReview"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasValueAddedServiceCategoryType -->
+    <!-- http://www.reisenavet.no/maas-onto#hasValueAddedServiceCategoryType -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasValueAddedServiceCategoryType">
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#hasValueAddedServiceCategoryType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedService"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceCategoryType"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedService"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceCategoryType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#includesMobilityPackage -->
+    <!-- http://www.reisenavet.no/maas-onto#includesMobilityPackage -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#includesMobilityPackage">
-        <owl:inverseOf rdf:resource="http://www.reisenavet.no/MaaSOntology#isMobilityPackageIncludedIn"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSService"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#MobilityPackage"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#includesMobilityPackage">
+        <owl:inverseOf rdf:resource="http://www.reisenavet.no/maas-onto#isMobilityPackageIncludedIn"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#MaaSService"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#MobilityPackage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#includesService -->
+    <!-- http://www.reisenavet.no/maas-onto#includesService -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#includesService">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#MobilityPackage"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#includesService">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#MobilityPackage"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isDiscountOfferedBy -->
+    <!-- http://www.reisenavet.no/maas-onto#isDiscountOfferedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isDiscountOfferedBy">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#EffectiveDiscount"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#isDiscountOfferedBy">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#EffectiveDiscount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isMaaSServiceProvidedBy -->
+    <!-- http://www.reisenavet.no/maas-onto#isMaaSServiceProvidedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isMaaSServiceProvidedBy">
-        <owl:inverseOf rdf:resource="http://www.reisenavet.no/MaaSOntology#providesMaaSService"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSService"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSProvider"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#isMaaSServiceProvidedBy">
+        <owl:inverseOf rdf:resource="http://www.reisenavet.no/maas-onto#providesMaaSService"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#MaaSService"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#MaaSProvider"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isMobilityPackageIncludedIn -->
+    <!-- http://www.reisenavet.no/maas-onto#isMobilityPackageIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isMobilityPackageIncludedIn">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#MobilityPackage"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSService"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#isMobilityPackageIncludedIn">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#MobilityPackage"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#MaaSService"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isOperatedWithin -->
+    <!-- http://www.reisenavet.no/maas-onto#isOperatedWithin -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isOperatedWithin">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#GeographicalCoverage"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#isOperatedWithin">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#GeographicalCoverage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isProvidedBy -->
+    <!-- http://www.reisenavet.no/maas-onto#isProvidedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isProvidedBy">
-        <owl:inverseOf rdf:resource="http://www.reisenavet.no/MaaSOntology#providesService"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#isProvidedBy">
+        <owl:inverseOf rdf:resource="http://www.reisenavet.no/maas-onto#providesService"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#providesMaaSService -->
+    <!-- http://www.reisenavet.no/maas-onto#providesMaaSService -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#providesMaaSService">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSProvider"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSService"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#providesMaaSService">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#MaaSProvider"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#MaaSService"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#providesService -->
+    <!-- http://www.reisenavet.no/maas-onto#providesService -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#providesService">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#providesService">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#toTime -->
+    <!-- http://www.reisenavet.no/maas-onto#toTime -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#toTime"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#toTime"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#voucherProvidedBy -->
+    <!-- http://www.reisenavet.no/maas-onto#voucherProvidedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/MaaSOntology#voucherProvidedBy">
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Voucher"/>
-        <rdfs:range rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedService"/>
+    <owl:ObjectProperty rdf:about="http://www.reisenavet.no/maas-onto#voucherProvidedBy">
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Voucher"/>
+        <rdfs:range rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedService"/>
     </owl:ObjectProperty>
     
 
@@ -473,290 +474,290 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#fromDateTime -->
+    <!-- http://www.reisenavet.no/maas-onto#fromDateTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#fromDateTime">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#fromDateTime">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#fromTime -->
+    <!-- http://www.reisenavet.no/maas-onto#fromTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#fromTime"/>
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#fromTime"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasAge -->
+    <!-- http://www.reisenavet.no/maas-onto#hasAge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasAge">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasAge">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Person"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasAmount -->
+    <!-- http://www.reisenavet.no/maas-onto#hasAmount -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasAmount">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasAmount">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasCO2Emission -->
+    <!-- http://www.reisenavet.no/maas-onto#hasCO2Emission -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasCO2Emission">
-        <rdfs:subPropertyOf rdf:resource="http://www.reisenavet.no/MaaSOntology#hasEcoSustainabilityParameter"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasCO2Emission">
+        <rdfs:subPropertyOf rdf:resource="http://www.reisenavet.no/maas-onto#hasEcoSustainabilityParameter"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasControlCode -->
+    <!-- http://www.reisenavet.no/maas-onto#hasControlCode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasControlCode">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasControlCode">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasCreditCardNumber -->
+    <!-- http://www.reisenavet.no/maas-onto#hasCreditCardNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasCreditCardNumber">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDepartureFrequency -->
-
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDepartureFrequency">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasCreditCardNumber">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDescription -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDepartureFrequency -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDescription">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDepartureFrequency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasDriverLicenseId -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDescription -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasDriverLicenseId">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#Person"/>
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDescription">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasEcoSustainabilityParameter -->
+    <!-- http://www.reisenavet.no/maas-onto#hasDriverLicenseId -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasEcoSustainabilityParameter">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasDriverLicenseId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.reisenavet.no/maas-onto#hasEcoSustainabilityParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasEcoSustainabilityParameter">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasExpiryDate -->
+    <!-- http://www.reisenavet.no/maas-onto#hasExpiryDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasExpiryDate">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasExpiryDate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasId -->
+    <!-- http://www.reisenavet.no/maas-onto#hasId -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasId"/>
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasId"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasLuggageSpaceAvailable -->
+    <!-- http://www.reisenavet.no/maas-onto#hasLuggageSpaceAvailable -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasLuggageSpaceAvailable">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasLuggageSpaceAvailable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportMeans"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#TransportMeans"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasName -->
+    <!-- http://www.reisenavet.no/maas-onto#hasName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasName">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasNumberOfPrepaidItems -->
+    <!-- http://www.reisenavet.no/maas-onto#hasNumberOfPrepaidItems -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasNumberOfPrepaidItems">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasNumberOfPrepaidItems">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasParkingAvailable -->
+    <!-- http://www.reisenavet.no/maas-onto#hasParkingAvailable -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasParkingAvailable">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasParkingAvailable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasPercentage -->
+    <!-- http://www.reisenavet.no/maas-onto#hasPercentage -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasPercentage">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasPercentage">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasPhone -->
+    <!-- http://www.reisenavet.no/maas-onto#hasPhone -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasPhone">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasPhone">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasRating -->
+    <!-- http://www.reisenavet.no/maas-onto#hasRating -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasRating">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasRating">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasSeatsAvailable -->
+    <!-- http://www.reisenavet.no/maas-onto#hasSeatsAvailable -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasSeatsAvailable">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasSeatsAvailable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasStringValue -->
+    <!-- http://www.reisenavet.no/maas-onto#hasStringValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasStringValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasStringValue"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasSufficientFunds -->
+    <!-- http://www.reisenavet.no/maas-onto#hasSufficientFunds -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasSufficientFunds">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasSufficientFunds">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTextualReview -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTextualReview -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTextualReview">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTextualReview">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasTravelTime -->
+    <!-- http://www.reisenavet.no/maas-onto#hasTravelTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasTravelTime">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasTravelTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasURL -->
+    <!-- http://www.reisenavet.no/maas-onto#hasURL -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasURL">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasURL">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasValue -->
+    <!-- http://www.reisenavet.no/maas-onto#hasValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasValue">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#hasVehicleAvailable -->
+    <!-- http://www.reisenavet.no/maas-onto#hasVehicleAvailable -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#hasVehicleAvailable">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#hasVehicleAvailable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isCompanyDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#isCompanyDiscount -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isCompanyDiscount">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#isCompanyDiscount">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isEnvironmentallyFriendly -->
+    <!-- http://www.reisenavet.no/maas-onto#isEnvironmentallyFriendly -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isEnvironmentallyFriendly">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#isEnvironmentallyFriendly">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#isPersonalDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#isPersonalDiscount -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#isPersonalDiscount">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#isPersonalDiscount">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#toDateTime -->
+    <!-- http://www.reisenavet.no/maas-onto#toDateTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#toDateTime">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#toDateTime">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#toTime -->
+    <!-- http://www.reisenavet.no/maas-onto#toTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#toTime"/>
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#toTime"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#validPaymentMeans -->
+    <!-- http://www.reisenavet.no/maas-onto#validPaymentMeans -->
 
-    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/MaaSOntology#validPaymentMeans">
+    <owl:DatatypeProperty rdf:about="http://www.reisenavet.no/maas-onto#validPaymentMeans">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+        <rdfs:domain rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -773,228 +774,228 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Accident -->
+    <!-- http://www.reisenavet.no/maas-onto#Accident -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Accident">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#TrafficInformation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Accident">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#TrafficInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Address -->
+    <!-- http://www.reisenavet.no/maas-onto#Address -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Address"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Address"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Attraction -->
+    <!-- http://www.reisenavet.no/maas-onto#Attraction -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Attraction"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Attraction"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#BikeRental -->
+    <!-- http://www.reisenavet.no/maas-onto#BikeRental -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#BikeRental">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_VehicleRental"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#BikeRental">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_VehicleRental"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#BookingConfirmation -->
+    <!-- http://www.reisenavet.no/maas-onto#BookingConfirmation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#BookingConfirmation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#BookingConfirmation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#BookingRequest -->
+    <!-- http://www.reisenavet.no/maas-onto#BookingRequest -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#BookingRequest"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#BookingRequest"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Bus -->
+    <!-- http://www.reisenavet.no/maas-onto#Bus -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Bus">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#PublicTransportService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#PublicTransportService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Capacity -->
+    <!-- http://www.reisenavet.no/maas-onto#Capacity -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Capacity"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Capacity"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CarRental -->
+    <!-- http://www.reisenavet.no/maas-onto#CarRental -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CarRental">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_VehicleRental"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CarRental">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_VehicleRental"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CarSharingService -->
+    <!-- http://www.reisenavet.no/maas-onto#CarSharingService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CarSharingService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_VehicleSharing"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CarSharingService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_VehicleSharing"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CinemaService -->
+    <!-- http://www.reisenavet.no/maas-onto#CinemaService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CinemaService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CinemaService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ClimateInformationService -->
+    <!-- http://www.reisenavet.no/maas-onto#ClimateInformationService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ClimateInformationService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InformationService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ClimateInformationService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InformationService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ClimateInformationServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#ClimateInformationServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ClimateInformationServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InformationServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ClimateInformationServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InformationServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ComfortLevel -->
+    <!-- http://www.reisenavet.no/maas-onto#ComfortLevel -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ComfortLevel">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Preferences"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ComfortLevel">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Preferences"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Congestion -->
+    <!-- http://www.reisenavet.no/maas-onto#Congestion -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Congestion">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#TrafficInformation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Congestion">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#TrafficInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CreditCard -->
+    <!-- http://www.reisenavet.no/maas-onto#CreditCard -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CreditCard">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CreditCard">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CreditCheckCompany -->
+    <!-- http://www.reisenavet.no/maas-onto#CreditCheckCompany -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CreditCheckCompany">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#FinancialOrganisation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CreditCheckCompany">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#FinancialOrganisation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CulturalEvent -->
+    <!-- http://www.reisenavet.no/maas-onto#CulturalEvent -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CulturalEvent">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Event"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CulturalInstitution -->
+    <!-- http://www.reisenavet.no/maas-onto#CulturalInstitution -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#CulturalInstitution">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#CulturalInstitution">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DailyOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#DailyOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DailyOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DailyOperation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DayOfWeek -->
+    <!-- http://www.reisenavet.no/maas-onto#DayOfWeek -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DayTypeAssignment -->
+    <!-- http://www.reisenavet.no/maas-onto#DayTypeAssignment -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DayTypeAssignment"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Delay -->
+    <!-- http://www.reisenavet.no/maas-onto#Delay -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Delay"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Delay"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DeliveryService -->
+    <!-- http://www.reisenavet.no/maas-onto#DeliveryService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DeliveryService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DeliveryService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DeliveryServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#DeliveryServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DeliveryServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DeliveryServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DiscountArrangement -->
+    <!-- http://www.reisenavet.no/maas-onto#DiscountArrangement -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DiscountType -->
+    <!-- http://www.reisenavet.no/maas-onto#DiscountType -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#DiscountType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#DiscountType"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#EffectiveDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#EffectiveDiscount -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#EffectiveDiscount">
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#EffectiveDiscount">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasPeriodType"/>
-                <owl:someValuesFrom rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasPeriodType"/>
+                <owl:someValuesFrom rdf:resource="http://www.reisenavet.no/maas-onto#PeriodType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ElectricScooterRental -->
+    <!-- http://www.reisenavet.no/maas-onto#ElectricScooterRental -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ElectricScooterRental">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_VehicleRental"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ElectricScooterRental">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_VehicleRental"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#EnvironmentalImpact -->
+    <!-- http://www.reisenavet.no/maas-onto#EnvironmentalImpact -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#EnvironmentalImpact">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Preferences"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#EnvironmentalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Preferences"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasValue"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasValue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1002,56 +1003,56 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Event -->
+    <!-- http://www.reisenavet.no/maas-onto#Event -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Event"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Event"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Facility -->
+    <!-- http://www.reisenavet.no/maas-onto#Facility -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Facility">
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Facility">
         <rdfs:comment>TODO: Have a look at the tm-facilities.owl ontology from the SNAP project.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Ferry -->
+    <!-- http://www.reisenavet.no/maas-onto#Ferry -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Ferry">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#PublicTransportService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Ferry">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#PublicTransportService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#FinancialOrganisation -->
+    <!-- http://www.reisenavet.no/maas-onto#FinancialOrganisation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#FinancialOrganisation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Organisation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#FinancialOrganisation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Organisation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#GeographicalCoverage -->
+    <!-- http://www.reisenavet.no/maas-onto#GeographicalCoverage -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#GeographicalCoverage"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#GeographicalCoverage"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#GroceryDelivery -->
+    <!-- http://www.reisenavet.no/maas-onto#GroceryDelivery -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#GroceryDelivery">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DeliveryService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#GroceryDelivery">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DeliveryService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ImprovementSuggestion -->
+    <!-- http://www.reisenavet.no/maas-onto#ImprovementSuggestion -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ImprovementSuggestion">
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ImprovementSuggestion">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasDescription"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasDescription"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1059,54 +1060,54 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#InfomationSource -->
+    <!-- http://www.reisenavet.no/maas-onto#InfomationSource -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#InfomationSource"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#InfomationSource"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#InformationService -->
+    <!-- http://www.reisenavet.no/maas-onto#InformationService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#InformationService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NonTransportService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#InformationService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NonTransportService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#InformationServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#InformationServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#InformationServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#InformationServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Infrastructure -->
+    <!-- http://www.reisenavet.no/maas-onto#Infrastructure -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Infrastructure"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Infrastructure"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Leg -->
+    <!-- http://www.reisenavet.no/maas-onto#Leg -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Leg"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Leg"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#LibraryDelivery -->
+    <!-- http://www.reisenavet.no/maas-onto#LibraryDelivery -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#LibraryDelivery">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DeliveryService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#LibraryDelivery">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DeliveryService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#LicenseNumber -->
+    <!-- http://www.reisenavet.no/maas-onto#LicenseNumber -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#LicenseNumber">
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#LicenseNumber">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasStringValue"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasStringValue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1114,160 +1115,160 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Location -->
+    <!-- http://www.reisenavet.no/maas-onto#Location -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Location"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Location"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#LuggageSpace -->
+    <!-- http://www.reisenavet.no/maas-onto#LuggageSpace -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#LuggageSpace">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Capacity"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#LuggageSpace">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Capacity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MaaSProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#MaaSProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#MaaSProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#MaaSProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MaaSService -->
+    <!-- http://www.reisenavet.no/maas-onto#MaaSService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#MaaSService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#MaaSService"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MaaSSubscription -->
+    <!-- http://www.reisenavet.no/maas-onto#MaaSSubscription -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#MaaSSubscription"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#MaaSSubscription"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MilitaryDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#MilitaryDiscount -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#MilitaryDiscount">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#MilitaryDiscount">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DiscountType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MobilePayment -->
+    <!-- http://www.reisenavet.no/maas-onto#MobilePayment -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#MobilePayment">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#MobilePayment">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MobilityPackage -->
+    <!-- http://www.reisenavet.no/maas-onto#MobilityPackage -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#MobilityPackage"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#MobilityPackage"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_AlternativeModeOfOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_AlternativeModeOfOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_AlternativeModeOfOperation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_AlternativeModeOfOperation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_ConventionalModeOfOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_ConventionalModeOfOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_ConventionalModeOfOperation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_ConventionalModeOfOperation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_FlexibleOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_FlexibleOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_FlexibleOperation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ConventionalModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_FlexibleOperation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_ConventionalModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_IndividualTraveller -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_IndividualTraveller -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_IndividualTraveller">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Person"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_IndividualTraveller">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_ModeOfOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_PersonalModeOfOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_PersonalModeOfOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_PersonalModeOfOperation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_PersonalModeOfOperation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_ScheduledOperation -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_ScheduledOperation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_ScheduledOperation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_ScheduledOperation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_TaxiService -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_TaxiService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_TaxiService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_AlternativeModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_TaxiService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_AlternativeModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_VehiclePooling -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_VehiclePooling -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_VehiclePooling">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_AlternativeModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_VehiclePooling">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_AlternativeModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_VehicleRental -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_VehicleRental -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_VehicleRental">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_AlternativeModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_VehicleRental">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_AlternativeModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NM_VehicleSharing -->
+    <!-- http://www.reisenavet.no/maas-onto#NM_VehicleSharing -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NM_VehicleSharing">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_AlternativeModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NM_VehicleSharing">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_AlternativeModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonOperatingPeriod -->
+    <!-- http://www.reisenavet.no/maas-onto#NonOperatingPeriod -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriod">
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NonOperatingPeriod">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasNonOperatingPeriodInterval"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasNonOperatingPeriodInterval"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasDescription"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasDescription"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1275,368 +1276,368 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonTransportService -->
+    <!-- http://www.reisenavet.no/maas-onto#NonTransportService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#NonTransportService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#NonTransportService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Organisation -->
+    <!-- http://www.reisenavet.no/maas-onto#Organisation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Organisation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Organisation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ParkingSpace -->
+    <!-- http://www.reisenavet.no/maas-onto#ParkingSpace -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ParkingSpace">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Capacity"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ParkingSpace">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Capacity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Payment -->
+    <!-- http://www.reisenavet.no/maas-onto#Payment -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Payment"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Payment"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PaymentMeans -->
+    <!-- http://www.reisenavet.no/maas-onto#PaymentMeans -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#PaymentMeans"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#PaymentMeans"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PaymentOption -->
+    <!-- http://www.reisenavet.no/maas-onto#PaymentOption -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#PaymentOption"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#PaymentOption"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PeriodType -->
+    <!-- http://www.reisenavet.no/maas-onto#PeriodType -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#PeriodType"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice -->
+    <!-- http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Price"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Price"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Person -->
+    <!-- http://www.reisenavet.no/maas-onto#Person -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Person"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Person"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Preferences -->
+    <!-- http://www.reisenavet.no/maas-onto#Preferences -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Preferences"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Preferences"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PrepaidPrice -->
+    <!-- http://www.reisenavet.no/maas-onto#PrepaidPrice -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#PrepaidPrice">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Price"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#PrepaidPrice">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Price"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Price -->
+    <!-- http://www.reisenavet.no/maas-onto#Price -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Price"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Price"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PublicTransportService -->
+    <!-- http://www.reisenavet.no/maas-onto#PublicTransportService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#PublicTransportService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ConventionalModeOfOperation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#PublicTransportService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NM_ConventionalModeOfOperation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RealTimeInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#RealTimeInformation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#RealTimeInformation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#RealTimeInformation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#TripInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RestaurantDelivery -->
+    <!-- http://www.reisenavet.no/maas-onto#RestaurantDelivery -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#RestaurantDelivery">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DeliveryService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#RestaurantDelivery">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DeliveryService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RestaurantService -->
+    <!-- http://www.reisenavet.no/maas-onto#RestaurantService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#RestaurantService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#RestaurantService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RetailServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#RetailServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#RetailServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#RetailServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Reward -->
+    <!-- http://www.reisenavet.no/maas-onto#Reward -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Reward"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Reward"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RewardDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#RewardDiscount -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#RewardDiscount">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#RewardDiscount">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DiscountType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Route -->
+    <!-- http://www.reisenavet.no/maas-onto#Route -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Route"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Route"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Seat -->
+    <!-- http://www.reisenavet.no/maas-onto#Seat -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Seat">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Capacity"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Seat">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Capacity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SeniorDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#SeniorDiscount -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#SeniorDiscount">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#SeniorDiscount">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DiscountType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Sensor -->
+    <!-- http://www.reisenavet.no/maas-onto#Sensor -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Sensor">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#TripInformationSource"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#TripInformationSource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Service -->
+    <!-- http://www.reisenavet.no/maas-onto#Service -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Service"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ServiceCalendar -->
+    <!-- http://www.reisenavet.no/maas-onto#ServiceCalendar -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ServiceCalendar"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ServiceCalendar"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#ServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SingleTicketPrice -->
+    <!-- http://www.reisenavet.no/maas-onto#SingleTicketPrice -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#SingleTicketPrice">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Price"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#SingleTicketPrice">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Price"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Status -->
+    <!-- http://www.reisenavet.no/maas-onto#Status -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Status"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Status"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SubscriptionFeeReduction -->
+    <!-- http://www.reisenavet.no/maas-onto#SubscriptionFeeReduction -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#SubscriptionFeeReduction">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#EffectiveDiscount"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#SubscriptionFeeReduction">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#EffectiveDiscount"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SubscriptionOption -->
+    <!-- http://www.reisenavet.no/maas-onto#SubscriptionOption -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#SubscriptionOption"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#SubscriptionOption"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TheaterService -->
+    <!-- http://www.reisenavet.no/maas-onto#TheaterService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TheaterService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TheaterService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TimePeriod -->
+    <!-- http://www.reisenavet.no/maas-onto#TimePeriod -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TimePeriod"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TimePeriod"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TouristInformationService -->
+    <!-- http://www.reisenavet.no/maas-onto#TouristInformationService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TouristInformationService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InformationService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TouristInformationService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InformationService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TouristInformationServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#TouristInformationServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TouristInformationServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InformationServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TouristInformationServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InformationServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TrafficInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#TrafficInformation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TrafficInformation">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#RealTimeInformation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TrafficInformation">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#RealTimeInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TrafficInformationService -->
+    <!-- http://www.reisenavet.no/maas-onto#TrafficInformationService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TrafficInformationService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InformationService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TrafficInformationService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InformationService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TrafficInformationServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#TrafficInformationServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TrafficInformationServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InformationServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TrafficInformationServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InformationServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Train -->
+    <!-- http://www.reisenavet.no/maas-onto#Train -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Train">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#PublicTransportService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Train">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#PublicTransportService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Tram -->
+    <!-- http://www.reisenavet.no/maas-onto#Tram -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Tram">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#PublicTransportService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Tram">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#PublicTransportService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportDemand -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportDemand -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TransportDemand"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TransportDemand"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportMeans -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportMeans -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TransportMeans"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TransportMeans"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportMode -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportMode -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TransportMode">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Preferences"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TransportMode">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Preferences"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportService -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TransportService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Service"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TransportService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Service"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TransportServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TransportServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TravelTime -->
+    <!-- http://www.reisenavet.no/maas-onto#TravelTime -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TravelTime">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Preferences"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TravelTime">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Preferences"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Trip -->
+    <!-- http://www.reisenavet.no/maas-onto#Trip -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Trip"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Trip"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TripInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#TripInformation -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TripInformation"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TripInformation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TripInformationSource -->
+    <!-- http://www.reisenavet.no/maas-onto#TripInformationSource -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TripInformationSource">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#InfomationSource"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TripInformationSource">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#InfomationSource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TripPattern -->
+    <!-- http://www.reisenavet.no/maas-onto#TripPattern -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#TripPattern"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#TripPattern"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#UnitOfMeasure -->
+    <!-- http://www.reisenavet.no/maas-onto#UnitOfMeasure -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#UnitOfMeasure"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#UnitOfMeasure"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#UserReview -->
+    <!-- http://www.reisenavet.no/maas-onto#UserReview -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#UserReview">
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#UserReview">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.reisenavet.no/MaaSOntology#hasStringValue"/>
+                <owl:onProperty rdf:resource="http://www.reisenavet.no/maas-onto#hasStringValue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1644,56 +1645,56 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ValueAddedService -->
+    <!-- http://www.reisenavet.no/maas-onto#ValueAddedService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ValueAddedService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#NonTransportService"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ValueAddedService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#NonTransportService"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ValueAddedServiceCategoryType -->
+    <!-- http://www.reisenavet.no/maas-onto#ValueAddedServiceCategoryType -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceCategoryType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ValueAddedServiceCategoryType"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ValueAddedServiceProvider -->
+    <!-- http://www.reisenavet.no/maas-onto#ValueAddedServiceProvider -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceProvider"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#ValueAddedServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#ServiceProvider"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Vehicle -->
+    <!-- http://www.reisenavet.no/maas-onto#Vehicle -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Vehicle">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Capacity"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Capacity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Voucher -->
+    <!-- http://www.reisenavet.no/maas-onto#Voucher -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#Voucher">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#EffectiveDiscount"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#Voucher">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#EffectiveDiscount"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#WiFiService -->
+    <!-- http://www.reisenavet.no/maas-onto#WiFiService -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#WiFiService">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#Preferences"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#WiFiService">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#Preferences"/>
     </owl:Class>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#YoungPersonDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#YoungPersonDiscount -->
 
-    <owl:Class rdf:about="http://www.reisenavet.no/MaaSOntology#YoungPersonDiscount">
-        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountType"/>
+    <owl:Class rdf:about="http://www.reisenavet.no/maas-onto#YoungPersonDiscount">
+        <rdfs:subClassOf rdf:resource="http://www.reisenavet.no/maas-onto#DiscountType"/>
     </owl:Class>
     
 
@@ -1709,75 +1710,75 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Airplane -->
+    <!-- http://www.reisenavet.no/maas-onto#Airplane -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Airplane">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#NM_ModeOfOperation"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Airplane">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#NM_ModeOfOperation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Bike -->
+    <!-- http://www.reisenavet.no/maas-onto#Bike -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Bike">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#BikeRental"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Bike">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#BikeRental"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Bus -->
+    <!-- http://www.reisenavet.no/maas-onto#Bus -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Bus">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#Bus"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Bus">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#Bus"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#CarRental -->
+    <!-- http://www.reisenavet.no/maas-onto#CarRental -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#CarRental">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#CarRental"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#CarRental">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#CarRental"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Cinema -->
+    <!-- http://www.reisenavet.no/maas-onto#Cinema -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Cinema">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceCategoryType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Cinema">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceCategoryType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ClimateInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#ClimateInformation -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#ClimateInformation"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#ClimateInformation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DailyOperation_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#DailyOperation_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#DailyOperation_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DailyOperation"/>
-        <fromTime rdf:resource="http://www.reisenavet.no/MaaSOntology#StartTime_05_00"/>
-        <toTime rdf:resource="http://www.reisenavet.no/MaaSOntology#EndTime_23_30"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#DailyOperation_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DailyOperation"/>
+        <maas-onto:fromTime rdf:resource="http://www.reisenavet.no/maas-onto#StartTime_05_00"/>
+        <maas-onto:toTime rdf:resource="http://www.reisenavet.no/maas-onto#EndTime_23_30"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Day -->
+    <!-- http://www.reisenavet.no/maas-onto#Day -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Day">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Day">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#PeriodType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DayTypeAssignment_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#DayTypeAssignment_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment"/>
-        <hasDailyOperation rdf:resource="http://www.reisenavet.no/MaaSOntology#DailyOperation_1"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#DayTypeAssignment_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayTypeAssignment"/>
+        <maas-onto:hasDailyOperation rdf:resource="http://www.reisenavet.no/maas-onto#DailyOperation_1"/>
         <time:dayOfWeek rdf:resource="http://www.w3.org/2006/time#Friday"/>
         <time:dayOfWeek rdf:resource="http://www.w3.org/2006/time#Monday"/>
         <time:dayOfWeek rdf:resource="http://www.w3.org/2006/time#Saturday"/>
@@ -1789,37 +1790,37 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DiscountArrangement_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#DiscountArrangement_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#DiscountArrangement_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
-        <hasDiscountType rdf:resource="http://www.reisenavet.no/MaaSOntology#RewardDiscount_1"/>
-        <hasEffectiveDiscount rdf:resource="http://www.reisenavet.no/MaaSOntology#SubscriptionFeeReduction_1"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#DiscountArrangement_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
+        <maas-onto:hasDiscountType rdf:resource="http://www.reisenavet.no/maas-onto#RewardDiscount_1"/>
+        <maas-onto:hasEffectiveDiscount rdf:resource="http://www.reisenavet.no/maas-onto#SubscriptionFeeReduction_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#DiscountArrangement_2 -->
+    <!-- http://www.reisenavet.no/maas-onto#DiscountArrangement_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#DiscountArrangement_2">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DiscountArrangement"/>
-        <hasDiscountType rdf:resource="http://www.reisenavet.no/MaaSOntology#RewardDiscount_2"/>
-        <hasEffectiveDiscount rdf:resource="http://www.reisenavet.no/MaaSOntology#Voucher_1"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#DiscountArrangement_2">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DiscountArrangement"/>
+        <maas-onto:hasDiscountType rdf:resource="http://www.reisenavet.no/maas-onto#RewardDiscount_2"/>
+        <maas-onto:hasEffectiveDiscount rdf:resource="http://www.reisenavet.no/maas-onto#Voucher_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ElectricScooter -->
+    <!-- http://www.reisenavet.no/maas-onto#ElectricScooter -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#ElectricScooter">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#ElectricScooterRental"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#ElectricScooter">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#ElectricScooterRental"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#EndTime_23_30 -->
+    <!-- http://www.reisenavet.no/maas-onto#EndTime_23_30 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#EndTime_23_30">
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#EndTime_23_30">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <time:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</time:hours>
         <time:minutes rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</time:minutes>
@@ -1827,254 +1828,254 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Ferry -->
+    <!-- http://www.reisenavet.no/maas-onto#Ferry -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Ferry">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#Ferry"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Ferry">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#Ferry"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Friday -->
+    <!-- http://www.reisenavet.no/maas-onto#Friday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Friday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Friday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#GroceryDeliveryService -->
+    <!-- http://www.reisenavet.no/maas-onto#GroceryDeliveryService -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#GroceryDeliveryService">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#GroceryDelivery"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#GroceryDeliveryService">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#GroceryDelivery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MaaSServiceProvider_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#MaaSServiceProvider_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#MaaSServiceProvider_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSProvider"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#MaaSServiceProvider_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#MaaSProvider"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MaaSService_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#MaaSService_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#MaaSService_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSService"/>
-        <hasUserReview rdf:resource="http://www.reisenavet.no/MaaSOntology#UserReview_1"/>
-        <includesMobilityPackage rdf:resource="http://www.reisenavet.no/MaaSOntology#MobilityPackage_1"/>
-        <isMaaSServiceProvidedBy rdf:resource="http://www.reisenavet.no/MaaSOntology#MaaSServiceProvider_1"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#MaaSService_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#MaaSService"/>
+        <maas-onto:hasUserReview rdf:resource="http://www.reisenavet.no/maas-onto#UserReview_1"/>
+        <maas-onto:includesMobilityPackage rdf:resource="http://www.reisenavet.no/maas-onto#MobilityPackage_1"/>
+        <maas-onto:isMaaSServiceProvidedBy rdf:resource="http://www.reisenavet.no/maas-onto#MaaSServiceProvider_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MilitaryDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#MilitaryDiscount -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#MilitaryDiscount">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#MilitaryDiscount"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#MilitaryDiscount">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#MilitaryDiscount"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#MobilityPackage_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#MobilityPackage_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#MobilityPackage_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#MobilityPackage"/>
-        <includesService rdf:resource="http://www.reisenavet.no/MaaSOntology#NonTransportService_1"/>
-        <includesService rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportService_1"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#MobilityPackage_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#MobilityPackage"/>
+        <maas-onto:includesService rdf:resource="http://www.reisenavet.no/maas-onto#NonTransportService_1"/>
+        <maas-onto:includesService rdf:resource="http://www.reisenavet.no/maas-onto#TransportService_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Monday -->
+    <!-- http://www.reisenavet.no/maas-onto#Monday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Monday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Monday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Month -->
+    <!-- http://www.reisenavet.no/maas-onto#Month -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Month">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Month">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#PeriodType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NOK -->
+    <!-- http://www.reisenavet.no/maas-onto#NOK -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NOK">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#UnitOfMeasure"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NOK">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#UnitOfMeasure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodBegins_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#NonOperatingPeriodBegins_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodBegins_1">
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NonOperatingPeriodBegins_1">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <time:inXSDDateTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2020-12-24T00:00:00Z</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodEnds_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#NonOperatingPeriodEnds_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodEnds_1">
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NonOperatingPeriodEnds_1">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <time:inXSDDateTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2020-12-31T00:00:00Z</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodInterval_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#NonOperatingPeriodInterval_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodInterval_1">
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NonOperatingPeriodInterval_1">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
-        <time:hasBeginning rdf:resource="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodBegins_1"/>
-        <time:hasEnd rdf:resource="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodEnds_1"/>
+        <time:hasBeginning rdf:resource="http://www.reisenavet.no/maas-onto#NonOperatingPeriodBegins_1"/>
+        <time:hasEnd rdf:resource="http://www.reisenavet.no/maas-onto#NonOperatingPeriodEnds_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonOperatingPeriod_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#NonOperatingPeriod_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriod_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriod"/>
-        <hasNonOperatingPeriodInterval rdf:resource="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodInterval_1"/>
-        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not operating during the Christmas period.</hasDescription>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NonOperatingPeriod_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#NonOperatingPeriod"/>
+        <maas-onto:hasNonOperatingPeriodInterval rdf:resource="http://www.reisenavet.no/maas-onto#NonOperatingPeriodInterval_1"/>
+        <maas-onto:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not operating during the Christmas period.</maas-onto:hasDescription>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonTransportServiceProvider_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#NonTransportServiceProvider_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NonTransportServiceProvider_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DeliveryServiceProvider"/>
-        <providesService rdf:resource="http://www.reisenavet.no/MaaSOntology#NonTransportService_1"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NONTRANSPORT SERVICE PROVIDER 1</hasName>
-        <hasPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+4792024418</hasPhone>
-        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ntsp1.no</hasURL>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NonTransportServiceProvider_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DeliveryServiceProvider"/>
+        <maas-onto:providesService rdf:resource="http://www.reisenavet.no/maas-onto#NonTransportService_1"/>
+        <maas-onto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NONTRANSPORT SERVICE PROVIDER 1</maas-onto:hasName>
+        <maas-onto:hasPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+4792024418</maas-onto:hasPhone>
+        <maas-onto:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ntsp1.no</maas-onto:hasURL>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#NonTransportService_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#NonTransportService_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#NonTransportService_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#RestaurantDelivery"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#NonTransportService_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#RestaurantDelivery"/>
         <geosparql:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON(59.873564414778  10.493993189681538, 59.98814948521885  10.513822023093592, 59.97723792105963 10.926922719178052, 59.82609132320136 10.8469464244161)</geosparql:asWKT>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice"/>
-        <hasPeriodType rdf:resource="http://www.reisenavet.no/MaaSOntology#Month"/>
-        <hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/MaaSOntology#NOK"/>
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</hasValue>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice"/>
+        <maas-onto:hasPeriodType rdf:resource="http://www.reisenavet.no/maas-onto#Month"/>
+        <maas-onto:hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/maas-onto#NOK"/>
+        <maas-onto:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</maas-onto:hasValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PrepaidPrice_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#PrepaidPrice_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#PrepaidPrice_1">
-        <hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/MaaSOntology#NOK"/>
-        <hasNumberOfPrepaidItems rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</hasNumberOfPrepaidItems>
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</hasValue>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#PrepaidPrice_1">
+        <maas-onto:hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/maas-onto#NOK"/>
+        <maas-onto:hasNumberOfPrepaidItems rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</maas-onto:hasNumberOfPrepaidItems>
+        <maas-onto:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</maas-onto:hasValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#PrepaidPrice_2 -->
+    <!-- http://www.reisenavet.no/maas-onto#PrepaidPrice_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#PrepaidPrice_2">
-        <hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/MaaSOntology#NOK"/>
-        <hasNumberOfPrepaidItems rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasNumberOfPrepaidItems>
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasValue>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#PrepaidPrice_2">
+        <maas-onto:hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/maas-onto#NOK"/>
+        <maas-onto:hasNumberOfPrepaidItems rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</maas-onto:hasNumberOfPrepaidItems>
+        <maas-onto:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</maas-onto:hasValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RetailHomeDelivery -->
+    <!-- http://www.reisenavet.no/maas-onto#RetailHomeDelivery -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#RetailHomeDelivery">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceCategoryType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#RetailHomeDelivery">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceCategoryType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RewardDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#RewardDiscount -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#RewardDiscount">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#RewardDiscount"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#RewardDiscount">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#RewardDiscount"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RewardDiscount_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#RewardDiscount_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#RewardDiscount_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#RewardDiscount"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#RewardDiscount_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#RewardDiscount"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#RewardDiscount_2 -->
+    <!-- http://www.reisenavet.no/maas-onto#RewardDiscount_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#RewardDiscount_2">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#RewardDiscount"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#RewardDiscount_2">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#RewardDiscount"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Saturday -->
+    <!-- http://www.reisenavet.no/maas-onto#Saturday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Saturday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Saturday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SeniorDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#SeniorDiscount -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#SeniorDiscount">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#SeniorDiscount"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#SeniorDiscount">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#SeniorDiscount"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#ServiceCalendar_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#ServiceCalendar_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#ServiceCalendar_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceCalendar"/>
-        <hasDayTypeAssignment rdf:resource="http://www.reisenavet.no/MaaSOntology#DayTypeAssignment_1"/>
-        <hasNonOperatingPeriod rdf:resource="http://www.reisenavet.no/MaaSOntology#NonOperatingPeriodInterval_1"/>
-        <fromDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-01T00:00:00</fromDateTime>
-        <toDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-31T00:00:00</toDateTime>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#ServiceCalendar_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#ServiceCalendar"/>
+        <maas-onto:hasDayTypeAssignment rdf:resource="http://www.reisenavet.no/maas-onto#DayTypeAssignment_1"/>
+        <maas-onto:hasNonOperatingPeriod rdf:resource="http://www.reisenavet.no/maas-onto#NonOperatingPeriodInterval_1"/>
+        <maas-onto:fromDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-01T00:00:00</maas-onto:fromDateTime>
+        <maas-onto:toDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-31T00:00:00</maas-onto:toDateTime>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SingleTicketPrice_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#SingleTicketPrice_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#SingleTicketPrice_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#SingleTicketPrice"/>
-        <hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/MaaSOntology#NOK"/>
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</hasValue>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#SingleTicketPrice_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#SingleTicketPrice"/>
+        <maas-onto:hasUnitOfMeasure rdf:resource="http://www.reisenavet.no/maas-onto#NOK"/>
+        <maas-onto:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</maas-onto:hasValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#StartTime_05_00 -->
+    <!-- http://www.reisenavet.no/maas-onto#StartTime_05_00 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#StartTime_05_00">
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#StartTime_05_00">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <time:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</time:hours>
         <time:minutes rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</time:minutes>
@@ -2082,144 +2083,144 @@
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#SubscriptionFeeReduction_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#SubscriptionFeeReduction_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#SubscriptionFeeReduction_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#SubscriptionFeeReduction"/>
-        <hasPeriodType rdf:resource="http://www.reisenavet.no/MaaSOntology#Month"/>
-        <hasPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</hasPercentage>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#SubscriptionFeeReduction_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#SubscriptionFeeReduction"/>
+        <maas-onto:hasPeriodType rdf:resource="http://www.reisenavet.no/maas-onto#Month"/>
+        <maas-onto:hasPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</maas-onto:hasPercentage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Sunday -->
+    <!-- http://www.reisenavet.no/maas-onto#Sunday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Sunday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Sunday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Theatre -->
+    <!-- http://www.reisenavet.no/maas-onto#Theatre -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Theatre">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#ValueAddedServiceCategoryType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Theatre">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#ValueAddedServiceCategoryType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Thursday -->
+    <!-- http://www.reisenavet.no/maas-onto#Thursday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Thursday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Thursday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TrafficInformation -->
+    <!-- http://www.reisenavet.no/maas-onto#TrafficInformation -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#TrafficInformation"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#TrafficInformation"/>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Train -->
+    <!-- http://www.reisenavet.no/maas-onto#Train -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Train">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#Train"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Train">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#Train"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Tram -->
+    <!-- http://www.reisenavet.no/maas-onto#Tram -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Tram">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#Tram"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Tram">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#Tram"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportServiceProvider_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportServiceProvider_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#TransportServiceProvider_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportServiceProvider"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSPORT SERVICE PROVIDER 1</hasName>
-        <hasPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+4792894418</hasPhone>
-        <hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.transportserviceprovider1.no</hasURL>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#TransportServiceProvider_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#TransportServiceProvider"/>
+        <maas-onto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSPORT SERVICE PROVIDER 1</maas-onto:hasName>
+        <maas-onto:hasPhone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+4792894418</maas-onto:hasPhone>
+        <maas-onto:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.transportserviceprovider1.no</maas-onto:hasURL>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#TransportService_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#TransportService_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#TransportService_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportService"/>
-        <hasModeOfOperation rdf:resource="http://www.reisenavet.no/MaaSOntology#ElectricScooter"/>
-        <hasPrice rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodicSubscriptionPrice_1"/>
-        <hasServiceCalendar rdf:resource="http://www.reisenavet.no/MaaSOntology#ServiceCalendar_1"/>
-        <isProvidedBy rdf:resource="http://www.reisenavet.no/MaaSOntology#TransportServiceProvider_1"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#TransportService_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#TransportService"/>
+        <maas-onto:hasModeOfOperation rdf:resource="http://www.reisenavet.no/maas-onto#ElectricScooter"/>
+        <maas-onto:hasPrice rdf:resource="http://www.reisenavet.no/maas-onto#PeriodicSubscriptionPrice_1"/>
+        <maas-onto:hasServiceCalendar rdf:resource="http://www.reisenavet.no/maas-onto#ServiceCalendar_1"/>
+        <maas-onto:isProvidedBy rdf:resource="http://www.reisenavet.no/maas-onto#TransportServiceProvider_1"/>
         <geosparql:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON(59.873564414778  10.493993189681538, 59.98814948521885  10.513822023093592, 59.97723792105963 10.926922719178052, 59.82609132320136 10.8469464244161)</geosparql:asWKT>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSPORT SERVICE 1</hasName>
+        <maas-onto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSPORT SERVICE 1</maas-onto:hasName>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Tuesday -->
+    <!-- http://www.reisenavet.no/maas-onto#Tuesday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Tuesday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Tuesday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#UserReview_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#UserReview_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#UserReview_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#UserReview"/>
-        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasRating>
-        <hasTextualReview rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nice MaaS Service</hasTextualReview>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#UserReview_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#UserReview"/>
+        <maas-onto:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</maas-onto:hasRating>
+        <maas-onto:hasTextualReview rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nice MaaS Service</maas-onto:hasTextualReview>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Voucher_1 -->
+    <!-- http://www.reisenavet.no/maas-onto#Voucher_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Voucher_1">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#Voucher"/>
-        <hasPeriodType rdf:resource="http://www.reisenavet.no/MaaSOntology#Month"/>
-        <isDiscountOfferedBy rdf:resource="http://www.reisenavet.no/MaaSOntology#GroceryDeliveryService"/>
-        <hasPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</hasPercentage>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Voucher_1">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#Voucher"/>
+        <maas-onto:hasPeriodType rdf:resource="http://www.reisenavet.no/maas-onto#Month"/>
+        <maas-onto:isDiscountOfferedBy rdf:resource="http://www.reisenavet.no/maas-onto#GroceryDeliveryService"/>
+        <maas-onto:hasPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</maas-onto:hasPercentage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Wednesday -->
+    <!-- http://www.reisenavet.no/maas-onto#Wednesday -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Wednesday">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#DayOfWeek"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Wednesday">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#DayOfWeek"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Week -->
+    <!-- http://www.reisenavet.no/maas-onto#Week -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Week">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Week">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#PeriodType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#Year -->
+    <!-- http://www.reisenavet.no/maas-onto#Year -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#Year">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#PeriodType"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#Year">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#PeriodType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.reisenavet.no/MaaSOntology#YoungPersonDiscount -->
+    <!-- http://www.reisenavet.no/maas-onto#YoungPersonDiscount -->
 
-    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/MaaSOntology#YoungPersonDiscount">
-        <rdf:type rdf:resource="http://www.reisenavet.no/MaaSOntology#YoungPersonDiscount"/>
+    <owl:NamedIndividual rdf:about="http://www.reisenavet.no/maas-onto#YoungPersonDiscount">
+        <rdf:type rdf:resource="http://www.reisenavet.no/maas-onto#YoungPersonDiscount"/>
     </owl:NamedIndividual>
     
 
@@ -2232,10 +2233,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.reisenavet.no/MaaSOntology#fromTime">
+    <rdf:Description rdf:about="http://www.reisenavet.no/maas-onto#fromTime">
         <rdfs:comment>TODO: Include W3CTime to enable time specification.</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.reisenavet.no/MaaSOntology#toTime">
+    <rdf:Description rdf:about="http://www.reisenavet.no/maas-onto#toTime">
         <rdfs:comment>TODO: Include W3CTime to enable time specification.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
